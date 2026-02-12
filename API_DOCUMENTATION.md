@@ -3,6 +3,11 @@
 ## Base URL
 Local: `http://127.0.0.1:8000`
 Production: `(Your Render/Heroku URL)`
+## 📬 Postman Collection
+
+Download the Postman collection here:
+
+[Download Task Manager API Collection](./postman/TaskManageAPI.postman_collection.json)
 
 ## Authentication
 All endpoints require a `user_id` query parameter context-switching between users.
