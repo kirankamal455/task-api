@@ -7,7 +7,7 @@ Production: `(Your Render/Heroku URL)`
 
 Download the Postman collection here:
 
-[Download Task Manager API Collection](./postman/TaskManageAPI.postman_collection.json)
+[Download Task Manager API Collection](./postman-collection/TaskManageAPi.postman_collection.json)
 
 ## Authentication
 All endpoints require a `user_id` query parameter context-switching between users.
