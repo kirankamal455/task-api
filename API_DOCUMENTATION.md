@@ -1,11 +1,9 @@
-# Task API Documentation
+# Task Manager API Documentation
 
 ## Base URL
 Local: `http://127.0.0.1:8000`
 Production: `(Your Render/Heroku URL)`
 ## 📬 Postman Collection
-
-Download the Postman collection here:
 
 [Download Task Manager API Collection](./postman-collection/TaskManageAPi.postman_collection.json)
 
@@ -37,11 +35,12 @@ Example: `?user_id=test_user`
 **Request Body:**
 ```json
 {
-  "title": "Finish API Docs",
-  "description": "Write markdown file",
-  "priority": "High",
-  "category": "Work",
-  "due_date": "2023-12-31T23:59:59"
+  "title": "Buy Groceries",
+  "description": "Milk, Bread, Eggs, Vegetables",
+  "is_completed": false,
+  "due_date": "2026-02-15T19:00:00",
+  "priority": "Medium",
+  "category": "Personal"
 }
 ```
 
@@ -51,11 +50,14 @@ Example: `?user_id=test_user`
   "status": "success",
   "message": "Task created successfully",
   "data": {
-    "id": 1,
-    "title": "Finish API Docs",
-    "priority": "High",
-    "category": "Work",
-    ...
+    "id": 12,
+    "title": "Buy Groceries",
+    "description": "Milk, Bread, Eggs, Vegetables",
+    "is_completed": false,
+    "due_date": "2026-02-15T19:00:00",
+    "priority": "Medium",
+    "category": "Personal",
+    "created_at": "2026-02-12T13:25:40"
   }
 }
 ```
